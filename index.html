@@ -4,7 +4,10 @@
     <h1 id="dbg"> </h1>
     <script>
         setInterval(
-            () => document.getElementById("dbg").innerHTML = screen.orientation.angle,
+            () => {
+              document.getElementById("dbg").innerHTML = screen.orientation.angle
+              window.scrollTo(0, 1);
+            },
             1000
         )
         
